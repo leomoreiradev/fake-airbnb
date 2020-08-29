@@ -15,7 +15,7 @@ fetch(API_URL)
       // Desestruture seu objeto, trazendo os seguintes dados:
       // Foto, tipo, nome e preço da propriedade.
       
-      const {  photo, property_type, name, price} = element
+      const {  photo, property_type, name, price } = element
 
       // Pegue a linha do container onde serão exibidos os cards.
       const row = document.querySelector("#row");
@@ -48,7 +48,6 @@ fetch(API_URL)
       const cardText = document.createElement('div')
       cardText.className = "card-text"
 
-      // Uffa! Finalmente os elementos da proriedade!
       // Precisamos agora, listar o tipo, o nome e o preço.
       const propertyType = document.createElement("p");
       propertyType.className = "property-type";
@@ -63,13 +62,12 @@ fetch(API_URL)
       propertyPrice.innerHTML = `Total de R$ ${price}`;
 
 
-     
-
-      // AOBA! Temos agora, todos os elementos necessários para percorrer a resposta da API e,
+      // Temos agora, todos os elementos necessários para percorrer a resposta da API e,
       // anexar um ao outro para exibição ao usuário. Para "anexar" os elementos, nós usaremos
       // o método "appendChild". Se liga na estrutura do componente, para que tudo seja exibido
       // corretamente:
 
+      row.appendChild(div);
       div.appendChild(card)
       card.appendChild(img)
       card.appendChild(cardBody)
@@ -77,9 +75,7 @@ fetch(API_URL)
       cardText.appendChild(propertyType)
       cardText.appendChild(propertyName)
       cardText.appendChild(propertyPrice)
-      //propertyPrice
-      row.appendChild(div);
-
+     
    
          
     });
