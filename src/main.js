@@ -35,7 +35,7 @@ fetch(API_URL)
       img.className = "card-img-top";
       // Não se esqueça que sua imagem precisa ser referenciada!
      
-      img.setAttribute("src",photo)
+      img.src = photo
 
       // Legal! Agora, já podemos começar a construir o "corpo" do card. Bora lá!
       // Obs.: atribua a class "card-body" do Bootstrap, para que fique bonitão. :)
@@ -60,7 +60,7 @@ fetch(API_URL)
 
       const propertyPrice = document.createElement("p");
       propertyPrice.className = "property-price"
-      propertyPrice.innerHTML = price;
+      propertyPrice.innerHTML = `Total de R$ ${price}`;
 
 
      
