@@ -1,3 +1,3 @@
 # Fake Airbnb - Gama Academy
-Veja a demo
-https://leomoreiradev.github.io/fake-airbnb/
+
+<a href="https://leomoreiradev.github.io/fake-airbnb/">Veja a demo aqui </a>
