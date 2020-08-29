@@ -59,7 +59,7 @@ fetch(API_URL)
 
       const propertyPrice = document.createElement("p");
       propertyPrice.className = "property-price"
-      propertyPrice.innerHTML = `Total de R$ ${price}`;
+      propertyPrice.innerHTML = `Total de R$ ${price.toLocaleString("pt-BR", { minimumFractionDigits: 2 , style: 'currency', currency: 'BRL' })}`;
 
 
       // Temos agora, todos os elementos necessários para percorrer a resposta da API e,
