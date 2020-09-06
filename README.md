@@ -1,3 +1,6 @@
 # Fake Airbnb - Gama Academy
 
-<a href="https://airbnb-fake-dev.netlify.app/">Veja a demo aqui </a>
+Desafio desenvolvido no Gama academy, com intuito de  avaliar as habilidades adquiridas.
+
+Tecnologias ultilizadas: HTML, CSS
+, Javascript, Bootstrap.
